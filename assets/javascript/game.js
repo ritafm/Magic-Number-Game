@@ -1,24 +1,40 @@
-* There will be four crystals displayed as buttons on the page.
+// set up magic number variable between 19-120
+var magicNumber = Math.floor((Math.random() * 101) + 19);
 
-* The player will be shown a random number at the start of the game.
+// link magic number variable show to html
+document.getElementById("num").innerHTML = magicNumber;
 
-* When the player clicks on a crystal, it will add a specific amount of points to the player's total score. 
 
-  * Your game will hide this amount until the player clicks a crystal.
-  * When they do click one, update the player's score counter.
+//set up 4 variables for the gems.  the values should be between 1 -12
+var gemOne = [];
 
-* The player wins if their total score matches the random number from the beginning of the game.
+for (let g = 1; g < 13; g++) {
+    console.log (gemOne + "gemOne");
+}
+var gemTwo = [];
 
-* The player loses if their score goes above the random number.
+for (let h = 1; h < 13; h++) {
+    console.log (gemTwo + "gemTwo");
+}
+var gemThree = [];
 
-* The game restarts whenever the player wins or loses.
+for (let i = 1; i < 13; i++) {
+    console.log (gemThree + "gemThree");
+}
+var gemFour = [];
 
-  * When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
+for (let j = 1; j < 13; j++) {
+    console.log (gemFour + "gemFour");
+}
+//set up variables for total, wins, and losses
 
-* The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
+//link win and lose values to html
 
-##### Option 1 Game design notes
+//create game reset
 
-* The random number shown at the start of the game should be between 19 - 120.
+//make click events for each gem that add to total and compare the total to magic number
 
-* Each crystal should have a random hidden value between 1 - 12.
+//write if loop for wins (total = magic number)
+
+//write else loop for losses (total > magic number)
+

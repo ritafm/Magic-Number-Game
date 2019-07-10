@@ -1,81 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crystal Collector</title>
+    <title>Magic Number</title>
+    <!-- google font-->
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
     <!-- reset CSS and style CSS -->
-    <link rel="reset" href="/assets/css/reset.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    
+    <link rel="reset" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="container">
-        <div class="row" id="title">
+
+        <div class="row" id="magicNum">
             <div class="col-12">
-                <h1>Crystal Collector</h1>
+                <h1>Magic Number : <span id="num"></span></h1>
             </div>
         </div>
 
-        <div class="row" id="magicNum">
-                <div class="col-12">
-                    <h1>Magic Number</h1>
-                </div>
-            </div>
-
         <div class="row" id="gems">
             <div class="col-3">
-                <img src="/assets/images/adamite.jpg">
+                <img src="images\bat.png" class="img-fluid" alt="Responsive image">
             </div>
             <div class="col-3">
-                    <img src="/assets/images/agate.jpg">
+                <img src="images\crow.jpg" class="img-fluid" alt="Responsive image">
             </div>
             <div class="col-3">
-                    <img src="/assets/images/amethyst.jpg">
+                <img src="images\frog.jpg" class="img-fluid" alt="Responsive image">
             </div>
             <div class="col-3">
-                    <img src="/assets/images/quartz.jpg">
+                <img src="images\stingray.jpg" class="img-fluid" alt="Responsive image">
             </div>
         </div>
 
         <div class="row" id="instructions">
-                <div class="col-12">
-                    <p>Each gem is assigned a value.  Click to add the values together.  You win if you land on the magic number.  Good luck!</p>
-                </div>
+            <div class="col-12">
+                <p>Each animal is assigned a value. Click to add the values together. You win if you land on the magic
+                    number. Good luck!</p>
+            </div>
         </div>
-        
+
         <div class="row" id="tally">
-                <div class="col-3" id="tally">
-                    <button>reset magic number</button>
-                </div>
-                <div class="col-3" id="total">
-                        <p>total score</p>
-                </div>
-                <div class="col-3" id="wins">
-                        <p>wins</p>
-                </div>
-                <div class="col-3" id="losses">
-                        <p>losses</p>
-                </div>
+            <div class="col-4">
+                <p>wins <span id="wins"></span></p>
+            </div>
+            <div class="col-4">
+                <p>total score <span id="total"></span></p>
+            </div>
+
+            <div class="col-4">
+                <p>losses <span id="losses"></span></p>
+            </div>
+        </div>
+        <div class="row" id="reset">
+            <div class="col-12">
+                <input class="btn btn-outline-primary" type="reset" value="Reset">
+            </div>
         </div>
 
 
-    
-        
+
+
+
     </div>
- 
-    
 
 
 
-
-
-
-    <script type=text/javascript src="assets/javascript/game.js"> </script>
+    <script type=text/javascript src="../javascript/game.js"> </script>
 
 </body>
+
 </html>
