@@ -3,7 +3,7 @@ $(document).ready(function(){
 var magicNumber = Math.floor((Math.random() * 101) + 19);
 
 // link magic number variable show to html
-document.getElementById("num").innerHTML = magicNumber;
+$('#num').html(magicNumber);
 
 
 //set up 4 variables for the gems.  the values should be between 1 -12
@@ -21,9 +21,9 @@ var win = 0;
 var lose = 0;
 
 //link win and lose values to html
-document.getElementById("wins").innerHTML = win;
+$('#wins').html(win);
 
-document.getElementById("losses").innerHTML = lose;
+$('#losses').html(lose);
 
 //write win function gotIt
 function gotIt() {
