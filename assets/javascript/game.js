@@ -1,4 +1,4 @@
-$(document).ready()
+$(document).ready(function(){
 // set up magic number variable between 19-120
 var magicNumber = Math.floor((Math.random() * 101) + 19);
 
@@ -93,7 +93,7 @@ function reset() {
         }else if (total > magicNumber) {tooHigh()
         }
     });
-
+})
  
 //write if statement for wins (total = magic number)
 
