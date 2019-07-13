@@ -12,9 +12,20 @@
 }
 
 #magicNum   {
-    padding: 5%;
+    padding: 1%;
 }
 
 #instructions  {
+    padding: 1%;
     font-family: 'Montserrat', sans-serif;
+}
+
+#tally    {
+    padding: 1%;
+}
+
+#userTotal    {
+    font-size: 40px;
+    color: palevioletred;
+
 }
