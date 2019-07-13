@@ -29,13 +29,13 @@
 
         <div class="row" id="gems">
             <div class="col-3">
-                <img src="images\bat.png" class="img-fluid" alt="Responsive image">
+                <img id="sharkPic" src="images\shark.jpg" onclick="sharkGo()" class="img-fluid" alt="Responsive image">
             </div>
             <div class="col-3">
-                <img src="images\crow.jpg" class="img-fluid" alt="Responsive image">
+                <img src="images\fish.jpg" class="img-fluid" alt="Responsive image">
             </div>
             <div class="col-3">
-                <img src="images\frog.jpg" class="img-fluid" alt="Responsive image">
+                <img src="images\manatee.jpg" class="img-fluid" alt="Responsive image">
             </div>
             <div class="col-3">
                 <img src="images\stingray.jpg" class="img-fluid" alt="Responsive image">
@@ -53,7 +53,7 @@
                 <p>wins <span id="wins"></span></p>
             </div>
             <div class="col-4">
-                <p>total score <span id="total"></span></p>
+                <p>total score <span id="userTotal"></span></p>
             </div>
 
             <div class="col-4">
@@ -62,7 +62,7 @@
         </div>
         <div class="row" id="reset">
             <div class="col-12">
-                <input class="btn btn-outline-primary" type="reset" value="Reset">
+                <input class="btn btn-outline-primary" type="reset" value="reset" onclick="reset()">
             </div>
         </div>
 
@@ -71,8 +71,6 @@
 
 
     </div>
-
-
 
     <script type=text/javascript src="../javascript/game.js"> </script>
 

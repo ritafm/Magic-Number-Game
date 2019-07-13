@@ -6,34 +6,49 @@ document.getElementById("num").innerHTML = magicNumber;
 
 
 //set up 4 variables for the gems.  the values should be between 1 -12
-var gemOne = [];
+var shark = Math.floor((Math.random() * 1) + 13);
 
-for (let g = 1; g < 13; g++) {
-    console.log (gemOne + "gemOne");
-}
-var gemTwo = [];
+var fish = Math.floor((Math.random() * 1) + 13);
 
-for (let h = 1; h < 13; h++) {
-    console.log (gemTwo + "gemTwo");
-}
-var gemThree = [];
+var manatee = Math.floor((Math.random() * 1) + 13);
 
-for (let i = 1; i < 13; i++) {
-    console.log (gemThree + "gemThree");
-}
-var gemFour = [];
+var stingray = Math.floor((Math.random() * 1) + 13);
 
-for (let j = 1; j < 13; j++) {
-    console.log (gemFour + "gemFour");
-}
 //set up variables for total, wins, and losses
+var total = 0;
+var win = 0;
+var lose = 0;
 
 //link win and lose values to html
+document.getElementById("wins").innerHTML = win;
 
+document.getElementById("losses").innerHTML = lose;
+
+//write win function gotIt
+function gotIt() {
+    alert ("You win!");
+    win++;
+    reset();    
+}
+//write lose function tooHigh
+function tooHigh() {
+    alert ("You lose!")
+    lose++;
+    reset();    
+}
 //create game reset
+function reset(){
+    document.getElementById("userTotal").innerHTML = '0';
+    magicNumber = Math.floor((Math.random() * 101) + 19);
+    document.getElementById("num").innerHTML = magicNumber;
+}
 
 //make click events for each gem that add to total and compare the total to magic number
-
+function sharkGo() {
+    userTotal = shark + total;
+    console.log("new user total " + userTotal);
+    document.getElementById("userTotal").innerHTML = userTotal;
+}
 //write if loop for wins (total = magic number)
 
 //write else loop for losses (total > magic number)
