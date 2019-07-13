@@ -26,30 +26,67 @@ document.getElementById("wins").innerHTML = win;
 document.getElementById("losses").innerHTML = lose;
 
 //write win function gotIt
-//function gotIt() {
-  //  reset();
+function gotIt() {
+    alert ("You won!");
+    win++;
+    $('#wins').text(win);
+    reset();
     
-//}
+}
+    
 //write lose function tooHigh
-//function tooHigh() {
-    //reset();
+function tooHigh() {
+    alert ("You lost");
+    lose++;
+    $('#losses').text(lose);
+    reset();
+
     
-//}
+}
 //create game reset
 function reset() {
-    document.getElementById("userTotal").innerHTML = '0';
+    document.getElementById("userTotal").innerHTML = 0;
     magicNumber = Math.floor((Math.random() * 101) + 19);
     document.getElementById("num").innerHTML = magicNumber;
     shark = Math.floor((Math.random() * 11 + 1));
     fish = Math.floor((Math.random() * 11 + 1));
     manatee = Math.floor((Math.random() * 11 + 1));
     stingray = Math.floor((Math.random() * 11 + 1));
+    userTotal = 0
+    total = 0
 }
 
 //make click events for each gem that add to total and compare the total to magic number
 
     $("#sharkPic").on('click' , function () {
         total = total + shark;
+        console.log("new user total " + total);
+        $('#userTotal').text(total);
+        if (total === magicNumber) {gotIt()    
+        }else if (total > magicNumber) {tooHigh()
+        }
+    });
+
+    $("#fishPic").on('click' , function () {
+        total = total + fish;
+        console.log("new user total " + total);
+        $('#userTotal').text(total);
+        if (total === magicNumber) {gotIt()    
+        }else if (total > magicNumber) {tooHigh()
+        }
+    });
+
+    $("#manPic").on('click' , function () {
+        total = total + manatee;
+        console.log("new user total " + total);
+        $('#userTotal').text(total);
+        if (total === magicNumber) {gotIt()    
+        }else if (total > magicNumber) {tooHigh()
+        }
+    });
+    
+    $("#stingPic").on('click' , function () {
+        total = total + stingray;
         console.log("new user total " + total);
         $('#userTotal').text(total);
         if (total === magicNumber) {gotIt()    
