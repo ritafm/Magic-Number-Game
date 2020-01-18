@@ -1,5 +1,5 @@
 # Magic Number Game
-This app uses HTML with jQuery.  
+Technologies Used: HTML, CSS, JavaScript, jQuery  
 
 There are four animal pictures.  Each animal is assigned a value. Click the animal to add the values together. You win if you reach the magic number without going over. Good luck!  
   
